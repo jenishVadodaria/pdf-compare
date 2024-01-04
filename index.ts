@@ -56,6 +56,7 @@ const comparePDFs = async (file1: string, file2: string) => {
     if (identical) {
       console.log("Files are identical");
     } else {
+      console.log("Files are different.");
       console.log("Differences:");
       pdf1Words.forEach((word, i) => {
         if (word !== pdf2Words[i]) {
